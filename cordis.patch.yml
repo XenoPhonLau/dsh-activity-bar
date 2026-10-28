@@ -1,0 +1,8 @@
+# dsh-activity-bar — bundle patch for DeepSeek Harness.
+#
+# `id` is the loader entry id shown as the first card line in the plugin list,
+# `name` is the npm package the loader resolves. They must differ, otherwise the
+# plugin card prints the same string twice.
+- insert:
+    - id: activity-bar
+      name: 'dsh-activity-bar'

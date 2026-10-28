@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-label="Activity bar layout diagram: a 44px icon rail on each side with the workspace in between">
+  <defs>
+    <style>
+      .bg { fill: #0d1017; }
+      .chrome { fill: #151922; }
+      .rail { fill: #171b24; }
+      .center { fill: #0d1017; }
+      .card { fill: #151922; stroke: #262d3a; stroke-width: 1; }
+      .icon { fill: #5b6474; rx: 5; }
+      .icon-on { fill: #4f8cff; rx: 5; }
+      .t { font-family: ui-sans-serif, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif; fill: #8b93a3; font-size: 12px; }
+      .tb { font-family: ui-sans-serif, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif; fill: #d7dce6; font-size: 13px; font-weight: 600; }
+      .dim { stroke: #2a3240; stroke-width: 1; stroke-dasharray: 4 4; fill: none; }
+      .accent { fill: #4f8cff; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1200" height="640" rx="12"/>
+  <rect class="chrome" x="0" y="0" width="1200" height="44" rx="12"/>
+  <rect class="chrome" x="0" y="32" width="1200" height="12"/>
+  <text class="t" x="16" y="27">title bar · host chrome (28px controls stay here)</text>
+  <circle cx="1150" cy="22" r="5" fill="#3a4250"/>
+  <circle cx="1168" cy="22" r="5" fill="#3a4250"/>
+  <circle cx="1186" cy="22" r="5" fill="#3a4250"/>
+
+  <!-- left rail: expand button, then every panel registered in the host -->
+  <rect class="rail" x="0" y="44" width="44" height="596"/>
+  <rect x="44" y="44" width="0.5" height="596" fill="#262d3a"/>
+  <rect class="icon-on" x="12" y="70" width="20" height="20"/>
+  <rect class="icon" x="12" y="112" width="20" height="20"/>
+  <rect class="icon" x="12" y="154" width="20" height="20"/>
+  <rect class="icon" x="12" y="196" width="20" height="20"/>
+  <rect class="icon" x="12" y="238" width="20" height="20"/>
+  <rect class="icon" x="12" y="280" width="20" height="20"/>
+
+  <!-- right rail: read live from the right bar's guide ledger -->
+  <rect class="rail" x="1156" y="44" width="44" height="596"/>
+  <rect x="1156" y="44" width="0.5" height="596" fill="#262d3a"/>
+  <rect class="icon" x="1168" y="70" width="20" height="20"/>
+  <rect class="icon" x="1168" y="112" width="20" height="20"/>
+  <rect class="icon" x="1168" y="154" width="20" height="20"/>
+  <rect class="icon" x="1168" y="196" width="20" height="20"/>
+  <rect class="icon" x="1168" y="238" width="20" height="20"/>
+  <rect class="icon" x="1168" y="280" width="20" height="20"/>
+  <rect class="icon" x="1168" y="322" width="20" height="20"/>
+  <rect class="icon" x="1168" y="364" width="20" height="20"/>
+  <rect class="icon" x="1168" y="406" width="20" height="20"/>
+
+  <!-- workspace -->
+  <text class="t" x="620" y="330" text-anchor="middle" opacity="0.45">workspace</text>
+  <rect class="card" x="300" y="360" width="600" height="76" rx="16"/>
+  <text class="t" x="324" y="392">Ask anything · workspace picker · model</text>
+  <rect class="card" x="300" y="452" width="120" height="28" rx="14"/>
+  <text class="t" x="360" y="471" text-anchor="middle" opacity="0.7">mode</text>
+  <rect class="card" x="432" y="452" width="150" height="28" rx="14"/>
+  <text class="t" x="507" y="471" text-anchor="middle" opacity="0.7">expert teams</text>
+
+  <!-- annotations -->
+  <path class="dim" d="M44 80 H84"/>
+  <text class="t" x="92" y="84" opacity="0.9">44px left rail — expand, then every registered panel</text>
+
+  <path class="dim" d="M1156 80 H1116"/>
+  <text class="t" x="1108" y="84" text-anchor="end" opacity="0.9">44px right rail — files, terminal, git, browser…</text>
+
+  <rect x="240" y="560" width="720" height="40" rx="10" fill="#11151d" stroke="#232a36"/>
+  <text class="t" x="600" y="585" text-anchor="middle">both rails on, nothing expanded → workspace ≈ 1832 CSS px (was ≈ 1171)</text>
+</svg>
